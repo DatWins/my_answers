@@ -1,4 +1,4 @@
-baseURL = "https://feed-my-mind.netlify.app/"
+baseURL = "https://datwins.github.io/hugo-ink/"
 languageCode = "en-us"
 title = "Since You Asked..."
 theme = "ink"
