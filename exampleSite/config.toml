@@ -14,7 +14,7 @@ pygmentscodefencesguesssyntax = true
 	subtitle = "Reflections, Suggestions, and Recommendations from that library guy"
 
 	# Optional 64x64 avatar image.
-	avatar = {{ $image := resources.Get "/images/can i help you.png" }}
+	# avatar removed: was a Go template, which is invalid TOML
 
 	
 	# Content types to disable Disqus on.
