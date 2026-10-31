@@ -1,4 +1,4 @@
-baseURL = "https://datwins.github.io/hugo-ink/"
+baseURL = "https://datwins.github.io/feed-my-mind/"
 languageCode = "en-us"
 title = "Since You Asked..."
 theme = "ink"
