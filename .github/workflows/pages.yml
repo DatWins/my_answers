@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          path: ink
 
       - name: Install Hugo
         run: |
@@ -35,18 +37,14 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build site
-        env:
-          # The theme is this repository itself, loaded from its parent folder
-          # (same layout Netlify used). The folder is named after the repo.
-          HUGO_THEME: ${{ github.event.repository.name }}
         run: |
-          cd exampleSite
+          cd ink/exampleSite
           hugo --gc --themesDir ../.. --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: exampleSite/public
+          path: ink/exampleSite/public
 
   deploy:
     needs: build
